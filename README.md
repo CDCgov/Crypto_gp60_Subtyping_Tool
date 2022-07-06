@@ -1,12 +1,59 @@
-# CDCgov GitHub Organization Open Source Project Template
+# Cryptosporidium GP60 Characterization Tool
 
-**Template for clearance: This project serves as a template to aid projects in starting up and moving through clearance procedures. To start, create a new repository and implement the required [open practices](open_practices.md), train on and agree to adhere to the organization's [rules of behavior](rules_of_behavior.md), and [send a request through the create repo form](https://forms.office.com/Pages/ResponsePage.aspx?id=aQjnnNtg_USr6NJ2cHf8j44WSiOI6uNOvdWse4I-C2NUNk43NzMwODJTRzA4NFpCUk1RRU83RTFNVi4u) using language from this template as a Guide.**
+
+### Tool Functionality and Overview
+
+This tool's intended purpose is to perform Cryptosporidium subtyping utuilizing the GP60 genomic target region within the Cryptosporidum genome. The region targets the subtype family, short tandem repeats and secondary repeats within the sequece. The tool works with Sanger sequences and isolate whole genome contig sequences in fasta format. 
 
 **General disclaimer** This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/organization/mission.htm).  GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise. 
 
-## Access Request, Repo Creation Request
+**Tool disclaimer**  ***Please note that the assays used are not ISO or CLIA-certified and should NOT be considered diagnostic!***
 
-* [CDC GitHub Open Project Request Form](https://forms.office.com/Pages/ResponsePage.aspx?id=aQjnnNtg_USr6NJ2cHf8j44WSiOI6uNOvdWse4I-C2NUNk43NzMwODJTRzA4NFpCUk1RRU83RTFNVi4u) _[Requires a CDC Office365 login, if you do not have a CDC Office365 please ask a friend who does to submit the request on your behalf. If you're looking for access to the CDCEnt private organization, please use the [GitHub Enterprise Cloud Access Request form](https://forms.office.com/Pages/ResponsePage.aspx?id=aQjnnNtg_USr6NJ2cHf8j44WSiOI6uNOvdWse4I-C2NUQjVJVDlKS1c0SlhQSUxLNVBaOEZCNUczVS4u).]_
+
+## Building Container
+
+To rebuild the container, clone this repository and run the command below:
+`docker build -tag(optional) -file Dockerfile <location>`
+
+## Requirements:
+- Linux Operating system 
+- [Docker](https://docs.docker.com/) 
+- Perl
+
+## Expected Input:
+- --fasta		Fasta file with 1 or more sanger sequences OR a fasta file containing the assembly of 1 samples
+- --blastdb	Prebuilt curated blast database
+- --data		Data type can be sanger or wgs (capitalization does not matter)
+
+## Expected Output: 
+Generates the gp60 subtyping results in a tab demilited text format
+
+### Running with Docker
+``` docker run -v $(pwd)/SM_TestData:/test --privileged wdpbcdsphl/crypto_gp60:2.4 perl /scripts/gp60Typer.pl --blastdb db/Crypto_GP60_DB --fasta /test/testInput_SM.fasta --data sanger > results_gp60SM-15.txt ```
+
+
+### Running with Singularity
+```singularity exec -B $(pwd)/SM_TestData:/dataIn crypto_gp60-2.4.simg perl /scripts/gp60Typer.pl --blastdb /db/Crypto_GP60_DB --fasta /dataIn/gp60_seqs.fasta --data sanger```
+
+## Developer
+Developed by: Alyssa Kelly, akelley139@gmail.com
+
+Modification by: Shatavia Morrison, SMorrison@cdc.gov
+
+Clinical Detection Surveillance/WDPB, CDC
+
+
+Tool version - 
+
+
+Database was updated on: 2021-10-26
+
+
+
+
+
+
+
 
 ## Related documents
 
@@ -17,9 +64,8 @@
 * [Contribution Notice](CONTRIBUTING.md)
 * [Code of Conduct](code-of-conduct.md)
 
-## Overview
 
-Describe the purpose of your project. Add additional sections as necessary to help collaborators and potential collaborators understand and use your project.
+
   
 ## Public Domain Standard Notice
 This repository constitutes a work of the United States Government and is not
