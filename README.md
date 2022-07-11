@@ -42,10 +42,6 @@ Modification by: Shatavia Morrison, SMorrison@cdc.gov
 
 Clinical Detection Surveillance/WDPB, CDC
 
-
-Tool version - 
-
-
 Database was updated on: 2021-10-26
 
 
