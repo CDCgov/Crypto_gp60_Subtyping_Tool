@@ -97,7 +97,7 @@ Nomenclature of the *C. parvum* IIaA15G2R2 subtype, which was designated as IIa 
 *Cryptosporidium* *gp60* gene and associated designation for subtype
 nomenclature.
 
-  ---------------------------------- -------------------
+  ---------------------------------- -------------------------
   |Trinucleotide repeat (5'→3') |   Subtype designation|
   | --- | --- |
   |TCA        |                        A
@@ -106,7 +106,7 @@ nomenclature.
   | ACATCA     |                        R\*
   | AAA/G ACG GTG GTA AGG    |          R^¶^
   | C/AAG AA/G GGC A    |               R^+^
-  ---------------------------------- -------------------
+  ---------------------------------- -------------------------
 
 \* Only within *C. parvum* subtype family IIa
 
@@ -138,16 +138,16 @@ query sequence.
 
 #### *Table 2:* non-Conforming Events (NCE) and associated definitions
 
-  -------------------- --------------------------------------------------------------------------------------------------------------------
-  | NCE           |       Description |
+  -------------------------- --------------------------------------------------------------------------------------------------------------------
+  | NCE                 |       Description |
   | --- | --- |
-  | NCE-1\_noGp60         | No *gp60* sequence detected. |
-  | NCE-2\_coverage       | Below coverage threshold (\<70%). | 
-  | NCE-3\_identity       | Below percent identity threshold (\<97%). Check manually for subtype family and request to add to *gp60* database. |
-  | NCE-4\_length         | Below length threshold (\<700bp). |
-  | NCE-5\_startAtTriNuc  | Possible incomplete subtype: sequence starts at 5\' repeats. |
-  | NCE-6\_missingTriNuc  | Sequence missing 5\' repeat region. |
-  | NCE-7\_AmbiguityInTriNuc | Incomplete subtype: ambiguous nucleotide(s) detected in 5\' repeat region. |
+  | NCE-1\_noGp60              | No *gp60* sequence detected. |
+  | NCE-2\_coverage            | Below coverage threshold (\<70%). | 
+  | NCE-3\_identity            | Below percent identity threshold (\<97%). Check manually for subtype family and request to add to *gp60* database. |
+  | NCE-4\_length              | Below length threshold (\<700bp). |
+  | NCE-5\_startAtTriNuc       | Possible incomplete subtype: sequence starts at 5\' repeats. |
+  | NCE-6\_missingTriNuc       | Sequence missing 5\' repeat region. |
+  | NCE-7\_AmbiguityInTriNuc   | Incomplete subtype: ambiguous nucleotide(s) detected in 5\' repeat region. |
   -------------------------- --------------------------------------------------------------------------------------------------------------------
 
 # Implementation
@@ -167,7 +167,7 @@ multi-sequence fasta file format. Fasta files should not be compressed,
 and multiple samples can be provided in the same file for Sanger
 sequences. Also, we have containerized the *gp60* tool, and it is
 available on the CDC GitHub Page:
-<https://github.com/CDCgov/WDPB_CDS_PHL_Tools/tree/master/Crypto_GP60_Tool>
+<https://github.com/CDCgov/Crypto_gp60_Subtyping_Tool>
 
 # Acknowledgements
 
