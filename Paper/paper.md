@@ -97,16 +97,16 @@ Nomenclature of the *C. parvum* IIaA15G2R2 subtype, which was designated as IIa 
 *Cryptosporidium* *gp60* gene and associated designation for subtype
 nomenclature.
 
-  ---------------------------------- -------------------------
-  |Trinucleotide repeat (5'→3') |   Subtype designation|
+  ---------------------------------- -------------------
+  |Trinucleotide repeat (5'→3') | Subtype designation|
   | --- | --- |
-  |TCA        |                        A
-  | TCG       |                         G
-  | TCT       |                         T
-  | ACATCA     |                        R\*
-  | AAA/G ACG GTG GTA AGG    |          R^¶^
-  | C/AAG AA/G GGC A    |               R^+^
-  ---------------------------------- -------------------------
+  |TCA        |                 A
+  | TCG       |                 G
+  | TCT       |                 T
+  | ACATCA     |                R\*
+  | AAA/G ACG GTG GTA AGG    |  R^¶^
+  | C/AAG AA/G GGC A    |       R^+^
+  ---------------------------------- -------------------
 
 \* Only within *C. parvum* subtype family IIa
 
