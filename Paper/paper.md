@@ -97,7 +97,6 @@ Nomenclature of the *C. parvum* IIaA15G2R2 subtype, which was designated as IIa 
 *Cryptosporidium* *gp60* gene and associated designation for subtype
 nomenclature.
 
-  -----------------------------------------------------
   |Trinucleotide repeat (5'→3') | Subtype 
   | --- | --- |
   |TCA                          |    A
@@ -106,7 +105,7 @@ nomenclature.
   | ACATCA                      |    R\*
   | AAA/G ACG GTG GTA AGG       |    R^¶^
   | C/AAG AA/G GGC A            |    R^+^
-  -----------------------------------------------------
+
 
 \* Only within *C. parvum* subtype family IIa
 
@@ -138,7 +137,6 @@ query sequence.
 
 #### *Table 2:* non-Conforming Events (NCE) and associated definitions
 
-  -------------------------- --------------------------------------------------------------------------------------------------------------------
   | NCE                 |       Description |
   | --- | --- |
   | NCE-1\_noGp60              | No *gp60* sequence detected. |
@@ -148,7 +146,6 @@ query sequence.
   | NCE-5\_startAtTriNuc       | Possible incomplete subtype: sequence starts at 5\' repeats. |
   | NCE-6\_missingTriNuc       | Sequence missing 5\' repeat region. |
   | NCE-7\_AmbiguityInTriNuc   | Incomplete subtype: ambiguous nucleotide(s) detected in 5\' repeat region. |
-  -------------------------- --------------------------------------------------------------------------------------------------------------------
 
 # Implementation
 
