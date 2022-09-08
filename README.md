@@ -40,7 +40,7 @@ Developed by: Alyssa Kelly, akelley139@gmail.com
 
 Modification by: Shatavia Morrison, SMorrison@cdc.gov
 
-Paper prepared by: Anusha Ginni, qxu0@cdc.gov
+Manuscript prepared by: Anusha Ginni, qxu0@cdc.gov
 
 Clinical Detection Surveillance/WDPB, CDC
 
