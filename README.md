@@ -3,7 +3,7 @@
 
 ### Tool Functionality and Overview
 
-This tool's intended purpose is to perform Cryptosporidium subtyping utuilizing the GP60 genomic target region within the Cryptosporidum genome. The region targets the subtype family, short tandem repeats and secondary repeats within the sequece. The tool works with Sanger sequences and isolate whole genome contig sequences in fasta format. 
+This tool's intended purpose is to perform Cryptosporidium subtyping utilizing the GP60 genomic target region within the Cryptosporidum genome. The region targets the subtype family, short tandem repeats and secondary repeats within the sequece. The tool works with Sanger sequences and isolate whole genome contig sequences in fasta format. 
 
 **General disclaimer** This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/organization/mission.htm).  GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise. 
 
@@ -26,7 +26,7 @@ To rebuild the container, clone this repository and run the command below:
 - --data		Data type can be sanger or wgs (capitalization does not matter)
 
 ## Expected Output: 
-Generates the gp60 subtyping results in a tab demilited text format
+Generates the gp60 subtyping results in a tab delimited text format
 
 ### Running with Docker
 ``` docker run -v $(pwd)/SM_TestData:/test --privileged wdpbcdsphl/crypto_gp60:2.4 perl /scripts/gp60Typer.pl --blastdb db/Crypto_GP60_DB --fasta /test/testInput_SM.fasta --data sanger > results_gp60SM-15.txt ```
@@ -39,6 +39,8 @@ Generates the gp60 subtyping results in a tab demilited text format
 Developed by: Alyssa Kelly, akelley139@gmail.com
 
 Modification by: Shatavia Morrison, SMorrison@cdc.gov
+
+Paper prepared by: Anusha Ginni, qxu0@cdc.gov
 
 Clinical Detection Surveillance/WDPB, CDC
 
