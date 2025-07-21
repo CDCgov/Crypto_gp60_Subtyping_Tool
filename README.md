@@ -7,7 +7,21 @@ This tool's intended purpose is to perform Cryptosporidium subtyping utilizing t
 
 **General disclaimer** This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/organization/mission.htm).  GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise. 
 
-**Tool disclaimer**  ***Please note that the assays used are not ISO or CLIA-certified and should NOT be considered diagnostic!***
+**Version:** Archived (Not maintained)
+
+**Organization:** NCEZID - Division of Foodborne, Waterborne, and Environmental Diseases (DFWED) 
+
+**Contact Email:** [ncezid_shareit@cdc.gov](mailto:ncezid_shareit@cdc.gov)  
+
+**Description:** This tool's intended purpose is to perform Cryptosporidium subtyping utilizing the GP60 genomic target region within the Cryptosporidum genome. The region targets the subtype family, short tandem repeats and secondary repeats within the sequece. The tool works with Sanger sequences and isolate whole genome contig sequences in fasta format. 
+
+**Exemption:** Non-exempt
+
+**Keywords:** pathogen surveillance, next generation sequencing, bioinformatics, genomics, metagenomics, parasitic disease, Cryptosporidiosis
+
+---
+
+> ⚠️ **Note:** The results produced by this pipeline are not ISO or CLIA-certified and should not be considered diagnostic.
 
 
 ## Building Container
